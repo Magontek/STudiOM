@@ -934,11 +934,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: Baja
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Media
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Alta
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
