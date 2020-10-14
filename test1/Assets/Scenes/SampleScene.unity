@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 531293365}
   - component: {fileID: 531293364}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Pause Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3765,6 +3765,7 @@ GameObject:
   - component: {fileID: 949154927}
   - component: {fileID: 949154932}
   - component: {fileID: 949154931}
+  - component: {fileID: 949154929}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3840,6 +3841,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &949154929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949154926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8a18fbf9c388a4484537c1dcda0c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Floating_TextPrefab: {fileID: 7278547162028848986, guid: 741b93e296836cd48892ecfff78fa13a,
+    type: 3}
 --- !u!4 &949154930
 Transform:
   m_ObjectHideFlags: 0
