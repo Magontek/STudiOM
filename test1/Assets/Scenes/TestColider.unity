@@ -16243,7 +16243,7 @@ TilemapRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.0925926, y: 0.0925926, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -22626,7 +22626,7 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -6, y: -11, z: 0}
   m_Size: {x: 9, y: 11, z: 2}
-  m_TileAnchor: {x: 0, y: 0, z: 1.8}
+  m_TileAnchor: {x: 0, y: 0, z: 2}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
     e00: 1
