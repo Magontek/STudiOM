@@ -7,7 +7,7 @@ public class Floating_Text_destroyer : MonoBehaviour
 {
 
     public float DestroyTime = 2f;
-    public Vector3 Offset = new Vector3(4, 4, 0);
+    public Vector3 Offset = new Vector3(0, -1, 5);
 
     void Start()//DESTRUYE EL TEXTo despues de DestroyTime
     {
