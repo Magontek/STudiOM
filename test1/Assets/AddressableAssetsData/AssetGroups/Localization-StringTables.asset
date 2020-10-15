@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-StringTables
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-StringTables
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 659227a1e259af045a7bf8a7ab9fd6fa
+  m_SerializeEntries:
+  - m_GUID: 713217dc9d2055e46ad348142fa30cf0
+    m_Address: Menu_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: db2fef49b0205aa4cbf42215ef67e04f
+    m_Address: Menu_es-CL
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CL
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e2c53a53aa136334cb62bc99fbbd78e3
+    m_Address: Menu_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 330c158d51ae31e49abd50eef8fd69d0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a150a1b5d49b32e4e8669db03b3651c9, type: 2}
+    - {fileID: 11400000, guid: 6b085b493f8be444e99cdbf8754e9aee, type: 2}

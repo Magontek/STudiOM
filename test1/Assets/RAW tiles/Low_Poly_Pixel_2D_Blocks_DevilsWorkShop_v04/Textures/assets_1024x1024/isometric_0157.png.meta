@@ -103,7 +103,11 @@ TextureImporter:
       - {x: -441, y: 250}
       - {x: -5, y: 505}
       - {x: 426, y: 249}
-    physicsShape: []
+    physicsShape:
+    - - {x: -443, y: 249}
+      - {x: -6, y: 501}
+      - {x: 426, y: 252}
+      - {x: -7, y: -4}
     bones: []
     spriteID: d90b23c1c40ddf4409dfb48d6bae220d
     internalID: 0

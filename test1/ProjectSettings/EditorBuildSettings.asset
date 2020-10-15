@@ -11,4 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestColider.unity
     guid: f14206d09ca6c0a4cada9db1274a0f92
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: d2f61790adac1ed459aee038d043b9be,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 0296152b283de514b9d5dd4ae9fe6905,
+      type: 2}
