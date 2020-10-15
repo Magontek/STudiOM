@@ -19,15 +19,31 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 1227444686848
-    m_Localized: JUGAR
+    m_Localized: WEBEAR
     m_Metadata:
       m_Items: []
   - m_Id: 8206833651712
-    m_Localized: OPCIONES
+    m_Localized: LAS WEAS
     m_Metadata:
       m_Items: []
   - m_Id: 9047191818240
-    m_Localized: FOME
+    m_Localized: CERRAR ESTA WEA FOME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34244133359616
+    m_Localized: WEA FOME AL TIRO TE LLEVO AL MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34531984248832
+    m_Localized: 'La Wea:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34626930708480
+    m_Localized: 'La Wea:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38163412652032
+    m_Localized: YA DALE WEON
     m_Metadata:
       m_Items: []
   references:
