@@ -19,7 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 1227444686848
-    m_Localized: Jugar
+    m_Localized: JUGAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8206833651712
+    m_Localized: OPCIONES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9047191818240
+    m_Localized: SALIR
     m_Metadata:
       m_Items: []
   references:

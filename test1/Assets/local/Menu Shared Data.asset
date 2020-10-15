@@ -16,7 +16,15 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 5cd057963b3644643bf6fafdea1d7ced
   m_Entries:
   - m_Id: 1227444686848
-    m_Key: PLAY
+    m_Key: JUGAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8206833651712
+    m_Key: OPCIONES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9047191818240
+    m_Key: SALIR
     m_Metadata:
       m_Items: []
   m_Metadata:
