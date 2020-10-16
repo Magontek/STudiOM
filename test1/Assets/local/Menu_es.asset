@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 34531984248832
-    m_Localized: "Gr\xE1ficos\t:"
+    m_Localized: "Gr\xE1ficos:"
     m_Metadata:
       m_Items: []
   - m_Id: 34626930708480
@@ -44,6 +44,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 38163412652032
     m_Localized: CONTINUAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46871274295296
+    m_Localized: VOLVER
     m_Metadata:
       m_Items: []
   references:

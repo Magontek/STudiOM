@@ -16,15 +16,15 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 5cd057963b3644643bf6fafdea1d7ced
   m_Entries:
   - m_Id: 1227444686848
-    m_Key: JUGAR
+    m_Key: PLAY
     m_Metadata:
       m_Items: []
   - m_Id: 8206833651712
-    m_Key: OPCIONES
+    m_Key: OPTIONS
     m_Metadata:
       m_Items: []
   - m_Id: 9047191818240
-    m_Key: SALIR
+    m_Key: QUIT
     m_Metadata:
       m_Items: []
   - m_Id: 34244133359616
@@ -32,15 +32,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 34531984248832
-    m_Key: GRAFICOS
+    m_Key: GRAPHICS
     m_Metadata:
       m_Items: []
   - m_Id: 34626930708480
-    m_Key: VOLUMEN
+    m_Key: VOLUME
     m_Metadata:
       m_Items: []
   - m_Id: 38163412652032
     m_Key: CONTINUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46871274295296
+    m_Key: GO BACK
     m_Metadata:
       m_Items: []
   m_Metadata:
