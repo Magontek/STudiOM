@@ -56,6 +56,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Prefabs\Floating_Text_sample\Floating_Text_destroyer.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Language Selection Menu (IMGUI)\LanguageSelectionMenuIMGUI.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Language Selection Menu (IMGUI)\SimpleLocalesProvider.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\LoadingMultipleStringsExample.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\LocalizedStringGetLocalizedStringExample.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\LocalizedStringTableExample.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\LocalizedStringWithChangeHandlerExample.cs" />
+     <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\StringDatabaseGetLocalizedStringExample.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\IState.cs" />
      <Compile Include="Assets\Scripts\Menu_Principal.cs" />
