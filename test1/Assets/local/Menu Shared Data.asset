@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: GO BACK
     m_Metadata:
       m_Items: []
+  - m_Id: 287420254228480
+    m_Key: END_1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

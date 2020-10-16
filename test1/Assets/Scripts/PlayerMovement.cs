@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
 		MovementHandler();
 		if(Mathf.Abs(movement.x) > 0|| Mathf.Abs(movement.y) > 0)
 		{
-			Debug.Log(movement);
 			animator.SetBool("Walking", true);
 		}
 		else

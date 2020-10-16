@@ -50,5 +50,9 @@ MonoBehaviour:
     m_Localized: Dejar de Webear
     m_Metadata:
       m_Items: []
+  - m_Id: 287420254228480
+    m_Localized: Te qlearon
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
