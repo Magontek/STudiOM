@@ -64,6 +64,10 @@
      <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\LocalizedStringWithChangeHandlerExample.cs" />
      <Compile Include="Assets\Samples\Localization\0.8.1-preview\Loading Strings\StringDatabaseGetLocalizedStringExample.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Entidades\Aldeano.cs" />
+     <Compile Include="Assets\Scripts\Estados\Roam_random.cs" />
+     <Compile Include="Assets\Scripts\Estados\Wait.cs" />
+     <Compile Include="Assets\Scripts\Estados\Walk_to.cs" />
      <Compile Include="Assets\Scripts\IState.cs" />
      <Compile Include="Assets\Scripts\Menu_Principal.cs" />
      <Compile Include="Assets\Scripts\Pausa.cs" />
