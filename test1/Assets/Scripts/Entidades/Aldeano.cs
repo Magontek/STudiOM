@@ -20,6 +20,9 @@ public class Aldeano : MonoBehaviour
 			var go = Instantiate(Floating_TextPrefab, transform.position, Quaternion.identity, transform);
     		go.GetComponent<TextMesh>().text = texto;//ACA se decide q dice el texto, puede ser de una variable
 		}
+		else{
+			Debug.Log("no hay TextPrefav pero deberia decir " + texto);
+		}
     }
 
 	private void Awake()
