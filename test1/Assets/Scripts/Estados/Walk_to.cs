@@ -23,12 +23,10 @@ internal class Walk_to : IState
     }
     public void OnEnter() {
 		_animator.SetBool("Walk", true);
-        _aldeano.ShowFloatingText("Caminando");
-		//Debug.Log("Walk");
-
         // Float text de caminando
         var stringOperation = stringRef.GetLocalizedString();
-        _aldeano.ShowFloatingText(stringOperation.Result);
+        if (stringOperation.IsDone)
+            _aldeano.ShowFloatingText(stringOperation.Result);
     }
     public void OnExit() {
     	_animator.SetBool("Walk", false);

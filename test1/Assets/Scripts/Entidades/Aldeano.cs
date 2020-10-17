@@ -58,9 +58,6 @@ public class Aldeano : MonoBehaviour
     }
 
     private void Update(){
-		if(!Floating_TextPrefab){
-			Debug.Log("no hay TextPrefav al incio");
-		}
 		_stateMachine.Tick();
     }
 
