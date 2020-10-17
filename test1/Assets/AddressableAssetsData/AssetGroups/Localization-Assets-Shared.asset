@@ -29,6 +29,14 @@ MonoBehaviour:
     m_Address: NPC_garbage Shared Data
     m_ReadOnly: 0
     m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d658b227c035e3f44b54c05e1611ea70
+    m_Address: Player Interactions Shared Data
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}

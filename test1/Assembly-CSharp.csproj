@@ -66,6 +66,8 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraZoomer.cs" />
      <Compile Include="Assets\Scripts\Entidades\Aldeano.cs" />
+     <Compile Include="Assets\Scripts\Entidades\Detector.cs" />
+     <Compile Include="Assets\Scripts\Estados\Get_out.cs" />
      <Compile Include="Assets\Scripts\Estados\Roam_random.cs" />
      <Compile Include="Assets\Scripts\Estados\Wait.cs" />
      <Compile Include="Assets\Scripts\Estados\Walk_to.cs" />

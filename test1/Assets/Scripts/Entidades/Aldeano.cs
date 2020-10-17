@@ -53,7 +53,7 @@ public class Aldeano : MonoBehaviour
     		go.GetComponent<TextMesh>().text = texto;//ACA se decide q dice el texto, puede ser de una variable
 		}
 		else{
-			Debug.Log("no hay TextPrefav pero deberia decir " + texto);
+			Debug.Log("no hay TextPrefab pero deberia decir " + texto);
 		}
     }
 

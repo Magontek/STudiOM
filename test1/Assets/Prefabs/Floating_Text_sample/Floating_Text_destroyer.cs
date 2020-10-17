@@ -7,12 +7,14 @@ public class Floating_Text_destroyer : MonoBehaviour
 {
 
     public float DestroyTime = 2f;
-    public Vector3 Offset = new Vector3(0, -1, 0);
+    private Vector3 Offset = new Vector3(0, -1, 0);
 
     void Start()//DESTRUYE EL TEXTo despues de DestroyTime
     {
+    	//float rnd = Random.Range(-4f,4f); Esto era para que tenga salidas aleatorias pero no funciona
+    	//Offset = new Vector3(rnd, 5f, 0);
+    	transform.localPosition += Offset;
         Destroy(gameObject, DestroyTime);
-        transform.localPosition += Offset;
     }
 
 }
