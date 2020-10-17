@@ -17,20 +17,20 @@ public class Aldeano : MonoBehaviour
 
 	private void Awake()
     {	
-
+    	var Detector = gameObject.AddComponent<Detector>();
     	var rigidbody = GetComponent<Rigidbody2D>();
     	var animator = GetComponent<Animator>();
     	_stateMachine = new StateMachine();
 		
     	var wait = new Wait(this, animator);
-    	var roam_random = new Roam_random(this);
+    	var roam_random = new Roam_random(this,rigidbody);
     	var walk_to = new Walk_to(this, animator,rigidbody);
 
     	Objetivo = rigidbody.position;
 
     	At(roam_random, walk_to, HasTarget());
         At(walk_to, wait, OnPosition());
-        //At(walk_to, roam_random, Stuck());
+        At(walk_to, roam_random, Stuck());
         At(wait, roam_random, Wait_end());
 
         _stateMachine.SetState(roam_random);
@@ -39,7 +39,7 @@ public class Aldeano : MonoBehaviour
 
         Func<bool> HasTarget() => () => Vector2.Distance(Objetivo,rigidbody.position) > 0.0f;
         Func<bool> OnPosition() => () => Vector2.Distance(Objetivo,rigidbody.position) <= 0.1f;
-        Func<bool> Stuck() => () => walk_to.Stuck == true;
+        Func<bool> Stuck() => () => false;
         Func<bool> Wait_end() => () => wait.TimePassed > 2f;
     }
 
