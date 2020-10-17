@@ -15,7 +15,7 @@ internal class Wait : IState
 	public void Tick()
     {
         TimePassed+=Time.deltaTime;
-        //Debug.Log("TimePassed %f", TimePassed);
+        Debug.Log("TimePassed " + TimePassed);
     }
     public void OnEnter() {
         TimePassed=0;

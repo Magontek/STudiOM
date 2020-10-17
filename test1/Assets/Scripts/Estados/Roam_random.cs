@@ -8,23 +8,22 @@ internal class Roam_random : IState
 
     public LocalizedString stringRef = new LocalizedString() { TableReference = "NPC_Garbage", TableEntryReference = "WALK" };
     
-    
-
 	public Roam_random(Aldeano aldeano){
         _aldeano=aldeano;
-        escala=0.2f;
+        escala=1f;
     }
 	public void Tick()
     {
     	Vector2 randomVector = new Vector2(Random.value-0.5f, Random.value-0.5f);
     	randomVector.Normalize();
         _aldeano.Objetivo = randomVector*escala;
-        _aldeano.speed=0.05f;
-        //Debug.Log("random");
+        _aldeano.speed=0.01f;
+        Debug.Log("Va a ir a " + _aldeano.Objetivo);
     }
     public void OnEnter() {
         var stringOperation = stringRef.GetLocalizedString();
     	_aldeano.ShowFloatingText(stringOperation.Result);
+    	Debug.Log("Randomizando");
     }
     public void OnExit() { }
 }
