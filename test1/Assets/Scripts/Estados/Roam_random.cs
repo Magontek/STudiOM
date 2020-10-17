@@ -19,7 +19,7 @@ internal class Roam_random : IState
         //Debug.Log("random");
     }
     public void OnEnter() {
-    	_aldeano.ShowFloatingText("Caminando");
+    	
     }
     public void OnExit() { }
 }

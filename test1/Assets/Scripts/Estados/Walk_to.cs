@@ -32,6 +32,7 @@ internal class Walk_to : IState
     	_last_position=_rigidbody.position;
 		TimeStuck = 0f;
 		_animator.SetBool("Walk", true);
+        _aldeano.ShowFloatingText("Caminando");
 		//Debug.Log("Walk");
     }
     public void OnExit() {
