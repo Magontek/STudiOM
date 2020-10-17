@@ -32,7 +32,7 @@ internal class Walk_to : IState
     	_last_position=_rigidbody.position;
 		TimeStuck = 0f;
 		_animator.SetBool("Walk", true);
-		Debug.Log("Walk");
+		//Debug.Log("Walk");
     }
     public void OnExit() {
     	_animator.SetBool("Walk", false);

@@ -16,8 +16,10 @@ internal class Roam_random : IState
     	randomVector.Normalize();
         _aldeano.Objetivo = randomVector*escala;
         _aldeano.speed=0.05f;
-        Debug.Log("random");
+        //Debug.Log("random");
     }
-    public void OnEnter() { }
+    public void OnEnter() {
+    	_aldeano.ShowFloatingText("Caminando");
+    }
     public void OnExit() { }
 }

@@ -8,8 +8,19 @@ public class Aldeano : MonoBehaviour
 
 	private StateMachine _stateMachine;
 
+	public GameObject Floating_TextPrefab;
+
 	public Vector2 Objetivo;
     public float speed;
+
+	public void ShowFloatingText(string texto)//Funcion de crear el texto de un PREFAB
+    {
+    	if(Floating_TextPrefab)//PRIMERO COMPRUEBA Q EXISTA (asi decia la instruccion)
+		{
+			var go = Instantiate(Floating_TextPrefab, transform.position, Quaternion.identity, transform);
+    		go.GetComponent<TextMesh>().text = texto;//ACA se decide q dice el texto, puede ser de una variable
+		}
+    }
 
 	private void Awake()
     {
@@ -35,6 +46,8 @@ public class Aldeano : MonoBehaviour
         Func<bool> Stuck() => () => walk_to.TimeStuck > 1f;
         Func<bool> Wait_end() => () => wait.TimePassed > 1000;
     }
+
+    
 
     private void Update() => _stateMachine.Tick();
 }
