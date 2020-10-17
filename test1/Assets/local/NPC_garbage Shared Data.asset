@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: WALL_COLIDE
     m_Metadata:
       m_Items: []
+  - m_Id: 72427355217920
+    m_Key: PLAYER_COLIDE
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

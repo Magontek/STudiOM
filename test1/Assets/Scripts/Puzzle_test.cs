@@ -8,9 +8,9 @@ public class Puzzle_test : MonoBehaviour
 
 	public GameObject pauseMenuUIP;
 	
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-    	if (other.name == "Aldeano") 
+    	if (other.collider.name == "Aldeano") 
     	{
             Pause_p();
         }

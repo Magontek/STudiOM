@@ -30,5 +30,9 @@ MonoBehaviour:
     m_Localized: Sorry wall
     m_Metadata:
       m_Items: []
+  - m_Id: 72427355217920
+    m_Localized: Sorry my lord
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

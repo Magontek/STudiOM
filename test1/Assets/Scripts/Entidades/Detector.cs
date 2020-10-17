@@ -11,7 +11,7 @@ public class Detector : MonoBehaviour // NOTE : Does not handle multiple beast e
     
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Colision");
+        //Debug.Log("Colision");
         if (other.collider.name=="Player")
         {
             PlayerInRange = true;
@@ -20,12 +20,12 @@ public class Detector : MonoBehaviour // NOTE : Does not handle multiple beast e
             WallInRange = true;
         }
         ThingDirection = other.relativeVelocity.normalized;
-        Debug.Log("Velocidad de deteccion = " + ThingDirection);
+        //Debug.Log("Velocidad de deteccion = " + ThingDirection);
     }
     
     private void OnCollisionExit2D(Collision2D other)
     {
-        Debug.Log("Descolision");    
+        //Debug.Log("Descolision");    
         if (other.collider.name=="Player")
         {
             PlayerInRange = false; 

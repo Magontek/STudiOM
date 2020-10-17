@@ -10,7 +10,8 @@ internal class Get_out : IState
 
     public Vector2 _thingdirection;
 
-    public LocalizedString stringRef = new LocalizedString() { TableReference = "NPC_Garbage", TableEntryReference = "WALL_COLIDE" };
+    private LocalizedString stringRef_1 = new LocalizedString() { TableReference = "NPC_Garbage", TableEntryReference = "WALL_COLIDE" };
+    private LocalizedString stringRef_2 = new LocalizedString() { TableReference = "NPC_Garbage", TableEntryReference = "PLAYER_COLIDE" };
 
     public Get_out(Aldeano aldeano,Rigidbody2D rigidbody,Vector2 ThingDirection){
         _aldeano=aldeano;
@@ -28,7 +29,7 @@ internal class Get_out : IState
     		randomVector.Normalize();
     		float angulo = Mathf.Atan2(_thingdirection.y, _thingdirection.x) * Mathf.Rad2Deg;
     		dir_salida = Quaternion.Euler(0, 0, angulo) * randomVector;
-    		Debug.Log("Choque direccion = " + angulo + " saliendo para = " + dir_salida);
+    		//Debug.Log("Choque direccion = " + angulo + " saliendo para = " + dir_salida);
     		_aldeano.detector.WallInRange=false;
     	}
     	else{
@@ -41,9 +42,14 @@ internal class Get_out : IState
         _aldeano.speed=0.01f;
 
 
-        // Float text de caminando
-        var stringOperation = stringRef.GetLocalizedString();
-        _aldeano.ShowFloatingText(stringOperation.Result);
+        // Float text de perdon
+        if(_aldeano.detector.PlayerInRange){
+        	_aldeano.ShowFloatingText(stringRef_2.GetLocalizedString().Result);
+        }
+        else{
+        	_aldeano.ShowFloatingText(stringRef_1.GetLocalizedString().Result);;
+        }
+        
     }
     public void OnEnter() {
         //Debug.Log("Getting out");

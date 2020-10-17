@@ -30,5 +30,9 @@ MonoBehaviour:
     m_Localized: La chucha
     m_Metadata:
       m_Items: []
+  - m_Id: 72427355217920
+    m_Localized: La wea weon!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
