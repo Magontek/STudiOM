@@ -26795,6 +26795,7 @@ GameObject:
   - component: {fileID: 1503156930}
   - component: {fileID: 1503156929}
   - component: {fileID: 1503156934}
+  - component: {fileID: 1503156935}
   m_Layer: 0
   m_Name: Aldeano
   m_TagString: Untagged
@@ -26896,7 +26897,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1108441103
   m_SortingLayer: -1
-  m_SortingOrder: 9
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ecd359c045351424082d2ba03ec132df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26938,6 +26939,22 @@ MonoBehaviour:
     type: 3}
   Objetivo: {x: 0, y: 0}
   speed: 0
+--- !u!58 &1503156935
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503156928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2410996}
+  serializedVersion: 2
+  m_Radius: 0.7169962
 --- !u!1 &1504689952
 GameObject:
   m_ObjectHideFlags: 0
@@ -27053,6 +27070,7 @@ GameObject:
   - component: {fileID: 1543474830}
   - component: {fileID: 1543474829}
   - component: {fileID: 1543474836}
+  - component: {fileID: 1543474837}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -27221,6 +27239,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUIP: {fileID: 989059818}
+--- !u!70 &1543474837
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543474828}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02987057, y: -1.6683481}
+  m_Size: {x: 1.1747843, y: 1.1747843}
+  m_Direction: 0
 --- !u!1 &1558191459
 GameObject:
   m_ObjectHideFlags: 0
