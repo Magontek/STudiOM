@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Aldeano : MonoBehaviour
 {
@@ -13,20 +15,9 @@ public class Aldeano : MonoBehaviour
 	public Vector2 Objetivo;
     public float speed;
 
-	public void ShowFloatingText(string texto)//Funcion de crear el texto de un PREFAB
-    {
-    	if(Floating_TextPrefab)//PRIMERO COMPRUEBA Q EXISTA (asi decia la instruccion)
-		{
-			var go = Instantiate(Floating_TextPrefab, transform.position, Quaternion.identity, transform);
-    		go.GetComponent<TextMesh>().text = texto;//ACA se decide q dice el texto, puede ser de una variable
-		}
-		else{
-			Debug.Log("no hay TextPrefav pero deberia decir " + texto);
-		}
-    }
-
 	private void Awake()
-    {
+    {	
+
     	var rigidbody = GetComponent<Rigidbody2D>();
     	var animator = GetComponent<Animator>();
     	_stateMachine = new StateMachine();
@@ -50,7 +41,23 @@ public class Aldeano : MonoBehaviour
         Func<bool> Wait_end() => () => wait.TimePassed > 1000;
     }
 
-    
+    public void ShowFloatingText(string texto)//Funcion de crear el texto de un PREFAB
+    {
+    	if(Floating_TextPrefab)//PRIMERO COMPRUEBA Q EXISTA (asi decia la instruccion)
+		{
+			var go = Instantiate(Floating_TextPrefab, transform.position, Quaternion.identity, transform);
+    		go.GetComponent<TextMesh>().text = texto;//ACA se decide q dice el texto, puede ser de una variable
+		}
+		else{
+			Debug.Log("no hay TextPrefav pero deberia decir " + texto);
+		}
+    }
 
-    private void Update() => _stateMachine.Tick();
+    private void Update(){
+		if(!Floating_TextPrefab){
+			Debug.Log("no hay TextPrefav al incio");
+		}
+		_stateMachine.Tick();
+    }
+
 }
