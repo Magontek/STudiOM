@@ -26,6 +26,22 @@ MonoBehaviour:
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e2a53a0338c80841af69ed3ea3e432a
+    m_Address: NPC_Garbage_es-CL
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CL
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d0b4bd116e144c241b2bc8191ec1f0a9
+    m_Address: NPC_Garbage_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: db2fef49b0205aa4cbf42215ef67e04f
     m_Address: Menu&Pause_es-CL
     m_ReadOnly: 1
@@ -42,6 +58,14 @@ MonoBehaviour:
     - Locale-en
     m_mainAssetType: UnityEngine.Localization.Tables.StringTable, Unity.Localization,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ea8e1afe895648448b2da904c1d2e18e
+    m_Address: NPC_Garbage_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1
