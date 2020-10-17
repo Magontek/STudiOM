@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class Pausa : MonoBehaviour
 {
 
-	public static bool Stopped = false;
+	public static bool MenuPause = false;
 	public GameObject pauseMenuUI;
+	public static  bool onEvent = false;
 
 	void Update ()
 	{
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (Stopped)
+			if (MenuPause)
 			{
 				Resume();
 			}
@@ -28,21 +29,25 @@ public class Pausa : MonoBehaviour
 	{
 		pauseMenuUI.SetActive(true);
 		Time.timeScale = 0f;
-		Stopped = true;
+		MenuPause = true;
 	}
 
 	public void Resume ()
 	{
 		pauseMenuUI.SetActive(false);
-		Time.timeScale = 1f;
-		Stopped = false;
+		MenuPause = false;
+		if (!onEvent)
+		{
+			Time.timeScale = 1f;
+		}
+
 	}
 
 	public void GoMenu()
 	{
 		SceneManager.LoadScene(0);
 		Time.timeScale = 1f;
-		Stopped = false;
+		MenuPause = false;
 	}
 
 	public void QuitGame()
