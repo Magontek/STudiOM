@@ -5,36 +5,34 @@ public class Detector : MonoBehaviour // NOTE : Does not handle multiple beast e
 {
     public bool PlayerInRange;
 
-    public Vector2 PlayerPosition;
+    public Vector2 ThingDirection;
 
     public bool WallInRange;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.name=="Player")
+        Debug.Log("Colision");
+        if (other.collider.name=="Player")
         {
             PlayerInRange = true;
-            PlayerPosition = GetPlayerPosition(other.GetComponent<Rigidbody2D>());
         }
         else{
             WallInRange = true;
         }
+        ThingDirection = other.relativeVelocity.normalized;
+        Debug.Log("Velocidad de deteccion = " + ThingDirection);
     }
     
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.name=="Player")
+        Debug.Log("Descolision");    
+        if (other.collider.name=="Player")
         {
-            PlayerInRange = false;
-            PlayerPosition = Vector2.zero;
+            PlayerInRange = false; 
         }
         else{
             WallInRange = false;
         }
-    }
-
-    public Vector3 GetPlayerPosition(Rigidbody2D _rigidbody)
-    {
-        return _rigidbody.position;
+        ThingDirection = Vector2.zero;
     }
 }

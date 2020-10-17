@@ -2,7 +2,6 @@ using UnityEngine;
 
 internal class Wait : IState
 {
-	private float escala;
 	private readonly Animator _animator;
     private readonly Aldeano _aldeano;
 

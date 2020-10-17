@@ -26805,7 +26805,6 @@ GameObject:
   - component: {fileID: 1503156933}
   - component: {fileID: 1503156932}
   - component: {fileID: 1503156931}
-  - component: {fileID: 1503156930}
   - component: {fileID: 1503156929}
   - component: {fileID: 1503156934}
   - component: {fileID: 1503156935}
@@ -26837,22 +26836,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &1503156930
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503156928}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.2410996}
-  serializedVersion: 2
-  m_Radius: 0.7169962
 --- !u!95 &1503156931
 Animator:
   serializedVersion: 3
@@ -27081,7 +27064,6 @@ GameObject:
   - component: {fileID: 1543474832}
   - component: {fileID: 1543474831}
   - component: {fileID: 1543474830}
-  - component: {fileID: 1543474829}
   - component: {fileID: 1543474836}
   - component: {fileID: 1543474837}
   m_Layer: 0
@@ -27091,22 +27073,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!70 &1543474829
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543474828}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02987057, y: -1.6683481}
-  m_Size: {x: 1.1747843, y: 1.1747843}
-  m_Direction: 0
 --- !u!114 &1543474830
 MonoBehaviour:
   m_ObjectHideFlags: 0

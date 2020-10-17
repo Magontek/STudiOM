@@ -23,6 +23,10 @@ MonoBehaviour:
     m_Key: WAIT
     m_Metadata:
       m_Items: []
+  - m_Id: 66553014362112
+    m_Key: WALL_COLIDE
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
