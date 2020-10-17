@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 internal class Roam_random : IState
 {
 	private float escala;
 	private readonly Aldeano _aldeano;
 
+    public LocalizedString stringRef = new LocalizedString() { TableReference = "NPC_Garbage", TableEntryReference = "WALK" };
+    
+    
 
 	public Roam_random(Aldeano aldeano){
         _aldeano=aldeano;
@@ -19,7 +23,8 @@ internal class Roam_random : IState
         //Debug.Log("random");
     }
     public void OnEnter() {
-    	_aldeano.ShowFloatingText("Caminando");
+        var stringOperation = stringRef.GetLocalizedString();
+    	_aldeano.ShowFloatingText(stringOperation.Result);
     }
     public void OnExit() { }
 }

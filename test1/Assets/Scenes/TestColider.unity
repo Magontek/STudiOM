@@ -26934,6 +26934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069304e26a6870d44bba7236474fba5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Floating_TextPrefab: {fileID: 7278547162028848986, guid: 741b93e296836cd48892ecfff78fa13a,
+    type: 3}
   Objetivo: {x: 0, y: 0}
   speed: 0
 --- !u!1 &1504689952

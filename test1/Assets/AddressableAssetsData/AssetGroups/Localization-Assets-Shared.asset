@@ -21,6 +21,14 @@ MonoBehaviour:
     m_Address: Menu Shared Data
     m_ReadOnly: 0
     m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 85cd77657c82e044aaf004b6802f7cd2
+    m_Address: NPC_garbage Shared Data
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
