@@ -17,6 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: d5a38b05822cd174692cd962bcccc51f
   m_SerializeEntries:
+  - m_GUID: 0edd696cdac1fdc47846bc736dc5c4ab
+    m_Address: Names Shared Data
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 5cd057963b3644643bf6fafdea1d7ced
     m_Address: Menu Shared Data
     m_ReadOnly: 0
@@ -37,7 +44,8 @@ MonoBehaviour:
     m_Address: Player Interactions Shared Data
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1

@@ -16,6 +16,8 @@ public class Aldeano : MonoBehaviour
 	public Vector2 Objetivo;
     public float speed;
 
+    public int npc = 1;
+
 	private void Awake()
     {	
     	detector = gameObject.AddComponent<Detector>();
