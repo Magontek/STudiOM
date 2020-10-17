@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class Aldeano : MonoBehaviour
 {
-	public event Action<int> OnGatheredChanged;
+	//public event Action<int> OnGatheredChanged;
 
 	private StateMachine _stateMachine;
 

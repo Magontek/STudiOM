@@ -22,7 +22,7 @@ internal class Walk_to : IState
     	//Si la distancia recorrida desde la ultima vez es menor a la esperada entonces suma tiempo de atasco
 
         // Se mueve en la direccion que dice a la velocidad que dice
-     	_rigidbody.MovePosition(_rigidbody.position + (_aldeano.Objetivo * _aldeano.speed));
+     	_rigidbody.MovePosition(_rigidbody.position + ((_rigidbody.position-_aldeano.Objetivo).normalized * _aldeano.speed));
 
     }
     public void OnEnter() {
