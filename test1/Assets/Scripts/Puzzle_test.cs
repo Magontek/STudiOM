@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Puzzle_test : MonoBehaviour
 {
 
-	public static bool StoppedP = false;
 	public GameObject pauseMenuUIP;
 	
     void OnTriggerEnter2D(Collider2D other)
@@ -21,20 +20,20 @@ public class Puzzle_test : MonoBehaviour
 	{
 		pauseMenuUIP.SetActive(true);
 		Time.timeScale = 0f;
-		StoppedP = true;
+		Pausa.onEvent = true;
 	}
 
 	public void Resume_r ()
 	{
 		pauseMenuUIP.SetActive(false);
 		Time.timeScale = 1f;
-		StoppedP = false;
+		Pausa.onEvent  = false;
 	}
 
 	public void Lose()
 	{
 		SceneManager.LoadScene(2);
 		Time.timeScale = 1f;
-		StoppedP = false;
+		Pausa.onEvent  = false;
 	}
 }
