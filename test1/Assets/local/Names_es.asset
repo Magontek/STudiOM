@@ -34,5 +34,9 @@ MonoBehaviour:
     m_Localized: Sebastian
     m_Metadata:
       m_Items: []
+  - m_Id: 74116852322304
+    m_Localized: Error
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
