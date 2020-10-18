@@ -142,7 +142,8 @@ MonoBehaviour:
     type: 3}
   Objetivo: {x: 0, y: 0}
   speed: 0
-  npc: 1
+  Floating_NamePrefab: {fileID: 7278547162028848986, guid: 6100ddb76d8253d4a9ad8b97a76ad259,
+    type: 3}
 --- !u!58 &4768874475920044765
 CircleCollider2D:
   m_ObjectHideFlags: 0

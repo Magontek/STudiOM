@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Prefabs\Floating_Name_sample\Floating_Name_destroyer.cs" />
      <Compile Include="Assets\Prefabs\Floating_Text_sample\Floating_Text_destroyer.cs" />
      <Compile Include="Assets\Samples\Localization\0.8.1-preview\Language Selection Menu (IMGUI)\LanguageSelectionMenuIMGUI.cs" />
      <Compile Include="Assets\Samples\Localization\0.8.1-preview\Language Selection Menu (IMGUI)\SimpleLocalesProvider.cs" />

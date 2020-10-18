@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Puzzle_test : MonoBehaviour
 {
-
 	public GameObject pauseMenuUIP;
 	
     void OnCollisionEnter2D(Collision2D other)
     {
-    	if (other.collider.name == "Aldeano") 
+    	if (other.collider.GetComponent<Aldeano>() != null) 
     	{
             Pause_p();
         }

@@ -2,7 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.Localization;
 using System.Collections.Generic;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Aldeano : MonoBehaviour
 {
@@ -16,7 +18,8 @@ public class Aldeano : MonoBehaviour
 	public Vector2 Objetivo;
     public float speed;
 
-    public int npc = 1;
+    public GameObject Floating_NamePrefab;//Variables para el nombre
+    public LocalizedString nameRef;
 
 	private void Awake()
     {	
@@ -45,6 +48,37 @@ public class Aldeano : MonoBehaviour
         Func<bool> OnPosition() => () => Vector2.Distance(Objetivo,rigidbody.position) <= 0.1f;
         Func<bool> Wait_end() => () => wait.TimePassed > 2f;
         Func<bool> Stuck() => () => detector.WallInRange || detector.PlayerInRange;
+
+
+    }
+
+
+    public void Start()
+    {
+
+        //CREADOR DE NOMBRE aleatorio
+
+        int KEY = UnityEngine.Random.Range(0, 4);
+        if(Floating_NamePrefab)
+        {
+            var name = Instantiate(Floating_NamePrefab, transform.position, Quaternion.identity, transform);
+            nameRef = new LocalizedString() { TableReference = "Names", TableEntryReference = KEY.ToString() };//No importa si se le hace un request, falla
+            var strOP = nameRef.GetLocalizedString();
+
+
+
+            name.GetComponent<TextMesh>().text = strOP.Result;//Recibe NULL por q es taradito
+            if (strOP.IsDone && strOP.Status == AsyncOperationStatus.Succeeded)//Esto espera a recibir el string de la tabla y da el ok pero nunca sucede
+            {
+                name.GetComponent<TextMesh>().text = strOP.Result;
+            }
+
+            
+        }
+        else
+        {
+           Debug.Log("no hay NamePrefab"); 
+        }
     }
 
     public void ShowFloatingText(string texto)//Funcion de crear el texto de un PREFAB
