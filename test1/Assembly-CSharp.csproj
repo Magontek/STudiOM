@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\IState.cs" />
      <Compile Include="Assets\Scripts\Menu_Principal.cs" />
      <Compile Include="Assets\Scripts\NameMaker.cs" />
+     <Compile Include="Assets\Scripts\Ocultador_elevados.cs" />
      <Compile Include="Assets\Scripts\Pausa.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Puzzle_test.cs" />
