@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Estados\Wait.cs" />
      <Compile Include="Assets\Scripts\Estados\Walk_to.cs" />
      <Compile Include="Assets\Scripts\IState.cs" />
+     <Compile Include="Assets\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Menu_Principal.cs" />
      <Compile Include="Assets\Scripts\NameMaker.cs" />
      <Compile Include="Assets\Scripts\Ocultador_elevados.cs" />

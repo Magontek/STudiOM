@@ -62,5 +62,9 @@ MonoBehaviour:
     m_Localized: Load
     m_Metadata:
       m_Items: []
+  - m_Id: 2185432173875200
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
