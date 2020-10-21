@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -6,15 +7,19 @@ using UnityEngine.Localization;
 //Este script va en la entidad
 
 public class TEST_textonplayer : MonoBehaviour
+
 {
 
 	public GameObject Floating_TextPrefab;
 	private LocalizedString stringRef = new LocalizedString() { TableReference = "Player_Interactions", TableEntryReference = "SAMPLE" };
 
+	public static event Action SoundPlay;
+
 	void Update ()
 	{
 		if (Input.GetKeyDown(KeyCode.Q))//ESTE ES EL TRIGGER puede ser lo q sea
 		{
+			SoundPlay?.Invoke();
 			if(Floating_TextPrefab)//PRIMERO COMPRUEBA Q EXISTA (asi decia la instruccion)
 			{
 				ShowFloatingText();//Invoca al texto

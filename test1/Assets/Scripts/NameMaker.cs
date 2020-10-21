@@ -11,7 +11,7 @@ public class NameMaker : MonoBehaviour
     void Start()
     {
     	int i;
-    	int max = Random.Range(100,1000);
+    	int max = Random.Range(5,20);
     	for(i=0;i<max;i++)
     	{
         	Name();
@@ -21,8 +21,8 @@ public class NameMaker : MonoBehaviour
 
  	void Name ()
  	{
- 		int x = Random.Range(-5, 10);
- 		int y = Random.Range(-10, 0);
+ 		int x = Random.Range(-50, 100) / 10;
+ 		int y = Random.Range(-100, 0) / 10;
  		var random_post = new Vector3(x,y,0);
  		Instantiate(NPCPrefab, random_post, Quaternion.identity, transform);
  		

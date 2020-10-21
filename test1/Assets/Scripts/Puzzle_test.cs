@@ -1,4 +1,5 @@
-﻿using System.Collections; 
+﻿using System;
+using System.Collections; 
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,12 +8,15 @@ public class Puzzle_test : MonoBehaviour
 {
 	public GameObject pauseMenuUIP;
 	
+	public static event Action Touch;
+
     void OnCollisionEnter2D(Collision2D other)
     {
     	if (other.collider.GetComponent<Aldeano>() != null) 
     	{
             Pause_p();
         }
+        Touch?.Invoke();
     }
 
 	public void Pause_p ()
@@ -31,8 +35,9 @@ public class Puzzle_test : MonoBehaviour
 
 	public void Lose()
 	{
-		SceneManager.LoadScene(2);
 		Time.timeScale = 1f;
 		Pausa.onEvent  = false;
+		SceneManager.LoadScene(2);
 	}
+
 }
