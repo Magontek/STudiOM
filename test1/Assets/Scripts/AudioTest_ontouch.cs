@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class AudioTest_ontouch : MonoBehaviour
 {
-	private AudioSource audio;
+	private AudioSource audioO;
 
-	private void Awake() => audio = GetComponent<AudioSource>();
+	private void Awake() => audioO = GetComponent<AudioSource>();
 
-	private void OnEnable() => Puzzle_test.Touch += PlayLoseAudio;
+	private void OnEnable() => Puzzle_test.Touch += PlayAudio;
 
-	private void OnDisable() => Puzzle_test.Touch -= PlayLoseAudio;
+	private void OnDisable() => Puzzle_test.Touch -= PlayAudio;
 
-	private void PlayLoseAudio() => audio.Play();
+	private void PlayAudio() => audioO.Play();
 }

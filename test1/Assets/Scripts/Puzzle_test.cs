@@ -15,8 +15,8 @@ public class Puzzle_test : MonoBehaviour
     	if (other.collider.GetComponent<Aldeano>() != null) 
     	{
             Pause_p();
+            Touch?.Invoke();
         }
-        Touch?.Invoke();
     }
 
 	public void Pause_p ()
