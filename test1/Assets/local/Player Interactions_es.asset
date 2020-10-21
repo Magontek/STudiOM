@@ -22,5 +22,9 @@ MonoBehaviour:
     m_Localized: Soy Texto
     m_Metadata:
       m_Items: []
+  - m_Id: 1566237698527232
+    m_Localized: 'Contador de Q''s:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

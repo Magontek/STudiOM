@@ -10,17 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Player Interactions Shared Data
+  m_Name: Events Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Player_Interactions
-  m_TableCollectionNameGuidString: d658b227c035e3f44b54c05e1611ea70
+  m_TableCollectionName: Events
+  m_TableCollectionNameGuidString: 423412bab85e2454cb0079f967623d25
   m_Entries:
-  - m_Id: 121956175872
-    m_Key: SAMPLE
+  - m_Id: 26242158592
+    m_Key: PUZZLE1M
     m_Metadata:
       m_Items: []
-  - m_Id: 1566237698527232
-    m_Key: COUNTER
+  - m_Id: 188129710080
+    m_Key: PUZZLE1R1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212494422016
+    m_Key: PUZZLE1R2
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -33,4 +37,4 @@ MonoBehaviour:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1602928654328
+        m_CustomEpoch: 1603299420838

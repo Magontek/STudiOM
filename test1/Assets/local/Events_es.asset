@@ -10,20 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Player Interactions_es-CL
+  m_Name: Events_es
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es-CL
-  m_SharedData: {fileID: 11400000, guid: d658b227c035e3f44b54c05e1611ea70, type: 2}
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 423412bab85e2454cb0079f967623d25, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 121956175872
-    m_Localized: Wea "Weeaa"
+  - m_Id: 26242158592
+    m_Localized: "Chocaste con el aldeano! \nte est\xE1 mirando con cara de nalga\n\xBFQue
+      haces?"
     m_Metadata:
       m_Items: []
-  - m_Id: 1566237698527232
-    m_Localized: 'Wea Wn Q wW:'
+  - m_Id: 188129710080
+    m_Localized: Mano a mano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212494422016
+    m_Localized: Ajo y Agua
     m_Metadata:
       m_Items: []
   references:

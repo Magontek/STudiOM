@@ -51,6 +51,14 @@ MonoBehaviour:
     m_Key: END_1
     m_Metadata:
       m_Items: []
+  - m_Id: 2131605924057088
+    m_Key: SAVE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2131679093690368
+    m_Key: LOAD
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

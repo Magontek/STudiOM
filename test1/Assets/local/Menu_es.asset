@@ -54,5 +54,13 @@ MonoBehaviour:
     m_Localized: Te cortaron, fuiste alpiste
     m_Metadata:
       m_Items: []
+  - m_Id: 2131605924057088
+    m_Localized: Guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2131679093690368
+    m_Localized: Cargar
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
