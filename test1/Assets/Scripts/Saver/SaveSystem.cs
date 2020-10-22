@@ -4,21 +4,24 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-	public static void SavePlayer(Player player)
+	public static void SaveData (SaveManager savedata, string pathtop)
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
-		string path = Application.persistentDataPath + "/player.stom";
+		string path = Application.persistentDataPath + "/" + pathtop + ".stom";
+		Debug.Log("Save Dir:" + path);
 		FileStream stream = new FileStream(path, FileMode.Create);
 
-		PlayerData data = new PlayerData(player);
+		PlayerData data = new PlayerData(savedata);
+		//SaveType
+
 
 		formatter.Serialize(stream, data);
 		stream.Close();
 	}
 
-	public static PlayerData LoadPlayer()
+	public static PlayerData LoadData (string pathtop)
 	{
-		string path = Application.persistentDataPath + "/player.stom";
+		string path = Application.persistentDataPath + "/" + pathtop + ".stom";
 		if (File.Exists(path))
 		{
 			BinaryFormatter formatter = new BinaryFormatter();
@@ -31,7 +34,7 @@ public static class SaveSystem
 		}
 		else
 		{
-			Debug.LogError("Save FIle not found in "+ path);
+			Debug.LogError("Save File not found in "+ path);
 			return null;
 		}
 	}

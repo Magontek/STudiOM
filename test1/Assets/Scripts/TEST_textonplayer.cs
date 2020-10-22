@@ -12,7 +12,7 @@ public class TEST_textonplayer : MonoBehaviour
 	public GameObject TextCounter;
 	public GameObject Floating_TextPrefab;
 	private LocalizedString stringRef = new LocalizedString() { TableReference = "Player_Interactions", TableEntryReference = "SAMPLE" };
-	public int counter = 0;
+	public int counter;
 
 	public static event Action SoundPlay;
 
@@ -21,8 +21,8 @@ public class TEST_textonplayer : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Q))//ESTE ES EL TRIGGER puede ser lo q sea
 		{
 			SoundPlay?.Invoke();
-			Player.counter += 1;
-			TextCounter.GetComponent<TMPro.TextMeshProUGUI>().text = Player.counter.ToString();
+			counter += 1;
+			TextCounter.GetComponent<TMPro.TextMeshProUGUI>().text = counter.ToString();
 			if(Floating_TextPrefab)//PRIMERO COMPRUEBA QUE EXISTA (asi decia la instruccion)
 			{
 				ShowFloatingText();//Invoca al texto
