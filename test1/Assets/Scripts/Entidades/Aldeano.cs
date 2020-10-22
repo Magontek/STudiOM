@@ -53,10 +53,8 @@ public class Aldeano : MonoBehaviour
 
     }
 
-
     private IEnumerator GiveMeAName()
     {
-
         //CREADOR DE NOMBRE aleatorio
         int KEY = UnityEngine.Random.Range(0, 4);
         if(Floating_NamePrefab)
@@ -92,4 +90,7 @@ public class Aldeano : MonoBehaviour
 		_stateMachine.Tick();
     }
 
+    public IState GetState(){
+    	return _stateMachine.GetState();
+    }
 }
