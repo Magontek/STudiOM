@@ -52952,7 +52952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eeaae873bb9b1c47a45930060aadff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextCounter: {fileID: 1093676264}
+  TCounter: {fileID: 1093676264}
 --- !u!114 &1543474830
 MonoBehaviour:
   m_ObjectHideFlags: 0
