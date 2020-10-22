@@ -40,6 +40,7 @@ public class Aldeano : MonoBehaviour
         At(wait, walk_to, Wait_end());
         //Lo que hace por primera vez al ejecutar el script
         Objetivo = rigidbody.position;
+        StartCoroutine(GiveMeAName());
         _stateMachine.SetState(wait);
 
         void At(IState to, IState from, Func<bool> condition) => _stateMachine.AddTransition(to, from, condition);
@@ -53,11 +54,10 @@ public class Aldeano : MonoBehaviour
     }
 
 
-    public void Start()
+    private IEnumerator GiveMeAName()
     {
 
         //CREADOR DE NOMBRE aleatorio
-
         int KEY = UnityEngine.Random.Range(0, 4);
         if(Floating_NamePrefab)
         {
@@ -65,15 +65,10 @@ public class Aldeano : MonoBehaviour
             nameRef = new LocalizedString() { TableReference = "Names", TableEntryReference = KEY.ToString() };//No importa si se le hace un request, falla
             var strOP = nameRef.GetLocalizedString();
 
-
-
             name.GetComponent<TextMesh>().text = strOP.Result;//Recibe NULL por q es taradito
-            if (strOP.IsDone && strOP.Status == AsyncOperationStatus.Succeeded)//Esto espera a recibir el string de la tabla y da el ok pero nunca sucede
-            {
-                name.GetComponent<TextMesh>().text = strOP.Result;
-            }
 
-            
+        	yield return new WaitUntil(() => strOP.IsDone && strOP.Status == AsyncOperationStatus.Succeeded);//Esto espera a recibir el string de la tabla y da el ok pero nunca sucede
+            name.GetComponent<TextMesh>().text = strOP.Result;
         }
         else
         {
