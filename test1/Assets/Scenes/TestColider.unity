@@ -52926,12 +52926,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1543474835}
   - component: {fileID: 1543474834}
-  - component: {fileID: 1543474833}
   - component: {fileID: 1543474832}
   - component: {fileID: 1543474831}
-  - component: {fileID: 1543474830}
-  - component: {fileID: 1543474836}
   - component: {fileID: 1543474837}
+  - component: {fileID: 1543474833}
+  - component: {fileID: 1543474836}
+  - component: {fileID: 1543474830}
   - component: {fileID: 1543474829}
   m_Layer: 0
   m_Name: Player
@@ -52952,7 +52952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eeaae873bb9b1c47a45930060aadff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
+  TextCounter: {fileID: 1093676264}
 --- !u!114 &1543474830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52965,9 +52965,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8a18fbf9c388a4484537c1dcda0c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
+  TextCounter: {fileID: 1093676264}
   Floating_TextPrefab: {fileID: 7278547162028848986, guid: 741b93e296836cd48892ecfff78fa13a,
     type: 3}
+  counter: 0
 --- !u!212 &1543474831
 SpriteRenderer:
   m_ObjectHideFlags: 0

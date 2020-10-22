@@ -6,9 +6,11 @@ using UnityEngine;
 public class PlayerData
 {
 	public float[] position;
+	public int counter;
 
     public PlayerData (Player player)
     {
+    	counter = Player.counter;
     	position = new float[3];
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
