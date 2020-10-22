@@ -8,16 +8,23 @@ public class opciones : MonoBehaviour
 {
 	public AudioMixer audioMixer;
 	public Slider slider;
-	public float vol;
 
 	public void Awake ()
 	{
-		audioMixer.GetFloat("Volume_Master", out vol);
-		slider.value = vol;
+		if (PlayerPrefs.HasKey("Volume"))
+		{
+			slider.value = PlayerPrefs.GetFloat("Volume");
+		}
+		else
+		{
+			slider.value = 0f;
+		}
+		//audioMixer.GetFloat("Volume_Master", out volume); ESTO lee el volumen del mixer
 	}
 
-	public void SetVolume (float volume)
+	public void SetVolume (float slider_value)
 	{
-		audioMixer.SetFloat("Volume_Master", volume);
+		PlayerPrefs.SetFloat("Volume", slider_value);
+		audioMixer.SetFloat("Volume_Master", slider_value);
 	}
 }

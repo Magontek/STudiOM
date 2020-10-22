@@ -2436,7 +2436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f6a20c38ecfe83846bcac1b4f18969bb, type: 2}
   slider: {fileID: 1973999825}
-  vol: 0
 --- !u!114 &1028119479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,7 +2770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43316126, g: 0.5394604, b: 0.5849056, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

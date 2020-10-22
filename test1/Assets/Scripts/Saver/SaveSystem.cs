@@ -12,8 +12,6 @@ public static class SaveSystem
 		FileStream stream = new FileStream(path, FileMode.Create);
 
 		PlayerData data = new PlayerData(savedata);
-		//SaveType
-
 
 		formatter.Serialize(stream, data);
 		stream.Close();

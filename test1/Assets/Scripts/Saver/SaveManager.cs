@@ -30,16 +30,4 @@ public class SaveManager : MonoBehaviour
 		
 		TextCounter.GetComponent<TMPro.TextMeshProUGUI>().text = data.counter.ToString();//actualiza el numero en pantalla
 	}
-
-	//Guardar Configuracion
-	public void SaveConfig ()
-	{
-		
-		//SaveSystem.SaveData(this, "config", class ConfigData);
-	}
-
-	public void LoadConfig ()
-	{
-
-	}
 }
