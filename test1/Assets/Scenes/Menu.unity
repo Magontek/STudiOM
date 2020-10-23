@@ -1312,43 +1312,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 0296152b283de514b9d5dd4ae9fe6905, type: 2}
-        m_MethodName: SetSelectedLocale
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 89a6593ea481bfa43b126dfdc23dc783,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Localization.Locale, Unity.Localization
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 0296152b283de514b9d5dd4ae9fe6905, type: 2}
-        m_MethodName: SetSelectedLocale
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c8f47e8bb1522ef4aa8bd7bd019cff24,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Localization.Locale, Unity.Localization
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 0296152b283de514b9d5dd4ae9fe6905, type: 2}
-        m_MethodName: SetSelectedLocale
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e88a3dee6e7bbd94882cee804bf97b5a,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Localization.Locale, Unity.Localization
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &324347025
 MonoBehaviour:
@@ -2034,7 +1998,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2361,7 +2325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &949032651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5175,7 +5139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1826816751
 RectTransform:
   m_ObjectHideFlags: 0
