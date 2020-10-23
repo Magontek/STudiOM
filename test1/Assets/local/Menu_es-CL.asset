@@ -66,5 +66,9 @@ MonoBehaviour:
     m_Localized: Weando...
     m_Metadata:
       m_Items: []
+  - m_Id: 2570268071923712
+    m_Localized: 'La Wea:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
