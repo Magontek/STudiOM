@@ -9,9 +9,16 @@ public class Pausa : MonoBehaviour
 	public static bool MenuPause = false;
 	public GameObject pauseMenuUI;
 	public static  bool onEvent = false;
+	Canvas canvas;
+
+    void Start()
+    {	
+        canvas = this.GetComponentInParent<Canvas>();
+    }
 
 	void Update ()
 	{
+		print(gameObject.name);
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (MenuPause)
@@ -27,6 +34,7 @@ public class Pausa : MonoBehaviour
 
 	public void Pause ()
 	{
+		canvas.sortingOrder = 10;
 		pauseMenuUI.SetActive(true);
 		Time.timeScale = 0f;
 		MenuPause = true;
@@ -34,6 +42,7 @@ public class Pausa : MonoBehaviour
 
 	public void Resume ()
 	{
+		canvas.sortingOrder = 0;
 		pauseMenuUI.SetActive(false);
 		MenuPause = false;
 		if (!onEvent)
